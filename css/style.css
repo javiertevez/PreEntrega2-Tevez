@@ -23,12 +23,14 @@ h2 {
     letter-spacing: 30px;
 }
 
-.banner {
-    display: flex;
-    height: 600px;
+.video-banner {
+    display: block;
+    height: 500px;
+    width: 100%;
     border-color: black;
     border: none;
-    justify-content: center;
+    object-position: center;
+    object-fit: cover;
 }
 
 .logo {
@@ -138,7 +140,7 @@ input {
 
 /* -------Footer------- */
 
-.footer {
+/* .footer {
     background-color: rgb(187, 138, 81);
     padding: 90px;
 }
@@ -156,5 +158,43 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: end;
+} */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: none;
+    width: 400px;
+}
+.footer div img {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.footer div {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.footer p {
+    padding-top: 7px;
+    padding-left: 20px;
 }
 
+footer {
+    background-color: rgb(179, 126, 65);
+    display: flex;
+    flex-direction: row;
+    
+}
+.logofooter {
+    width: 150px;
+    display: inline;
+    flex-direction: row;
+    border: none;
+    margin-left: 650px;
+}
+    
