@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../resources/caviar_dreams/fonts/CaviarDreams.ttf);
+}
+
+h1 {
+    font-family: "titulo";
+    font-size: 60px;
+    color: rgb(162, 162, 162);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: "titulo";
+    color: rgb(69, 69, 69);
+    margin: 20px 30px;
+    letter-spacing: 30px;
+}
+
+.banner {
+    display: flex;
+    height: 600px;
+    border-color: black;
+    border: none;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+}
+
+.rutero {
+    width: 300px;
+}
+
+nav {
+    font-family: "titulo";
+    border-style: none;
+    margin: 30px;
+    padding-inline-start: 30px;
+
+}
+
+li {
+    display: inline;
+    padding: 30px 30px;
+    margin: 10px 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration:
+        none;
+    font-size: 25px;
+    color: rgb(76, 76, 76);
+    font-weight: bold;
+}
+
+.repertorio {
+    color: rgb(189, 106, 68);
+    font-family: "titulo";
+    text-align: center;
+
+}
+
+.repertorio li {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.caja-repertorio {
+    border-style: solid;
+    color: rgb(189, 106, 68);
+    padding: 20px;
+    margin: 20px;
+}
+
+input {
+    display: block;
+    margin: 20px;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* sobre nosotros */
+
+.nosotros {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    width: 1000px;
+    margin: 70px;
+
+}
+
+.nosotros h3 {
+    margin: 20px;
+}
+
+.ruteros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15fr 1fr;
+    justify-items: center;
+
+
+}
+
+.ruteros img {
+    height: 200px;
+}
+
+.rutero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rutero p {
+    font-family: "titulo";
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* -------Footer------- */
+
+.footer {
+    background-color: rgb(187, 138, 81);
+    padding: 90px;
+}
+
+.footer p {
+    padding: 20px;
+    font-family: "titulo";
+}
+
+.footer img {
+    height: 40px;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
