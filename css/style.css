@@ -33,7 +33,7 @@ h2 {
     object-fit: cover;
 }
 
-.logo {
+.barra-navegacion .logo {
     width: 100px;
     display: block;
 }
@@ -42,7 +42,7 @@ h2 {
     width: 300px;
 }
 
-nav {
+.barra-navegacion nav {
     font-family: "titulo";
     border-style: none;
     margin: 30px;
@@ -50,14 +50,14 @@ nav {
 
 }
 
-li {
+.barra-navegacion li {
     display: inline;
     padding: 30px 30px;
     margin: 10px 10px;
     list-style-type: none;
 }
 
-a {
+.barra-navegacion a {
     text-decoration:
         none;
     font-size: 25px;
@@ -101,15 +101,16 @@ input {
 .nosotros {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    display: block;
-    width: 1000px;
-    margin: 70px;
-
+    margin: 60px;
 }
 
 .nosotros h3 {
     margin: 20px;
+
 }
 
 .ruteros {
@@ -140,25 +141,6 @@ input {
 
 /* -------Footer------- */
 
-/* .footer {
-    background-color: rgb(187, 138, 81);
-    padding: 90px;
-}
-
-.footer p {
-    padding: 20px;
-    font-family: "titulo";
-}
-
-.footer img {
-    height: 40px;
-}
-
-.footer div {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-} */
 
 .footer {
     display: flex;
@@ -167,18 +149,21 @@ input {
     border: none;
     width: 400px;
 }
+
 .footer div img {
     height: 30px;
     width: 30px;
     overflow: hidden;
     object-fit: cover;
 }
+
 .footer div {
     display: flex;
     flex-direction: row;
 
 
 }
+
 .footer p {
     padding-top: 7px;
     padding-left: 20px;
@@ -188,8 +173,9 @@ footer {
     background-color: rgb(179, 126, 65);
     display: flex;
     flex-direction: row;
-    
+
 }
+
 .logofooter {
     width: 150px;
     display: inline;
@@ -197,4 +183,61 @@ footer {
     border: none;
     margin-left: 650px;
 }
-    
+
+/* -------- galería de fotos -------- */
+
+
+.img1 {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.img2 {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.img3 {
+    width: 310px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.img4 {
+    width: 310px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.img5 {
+    width: 310px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+
+.video {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+@media (max-width: 910px) {
+    .ruteros {
+        display: block;
+    }
+
+}
