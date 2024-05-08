@@ -22,6 +22,10 @@ h2 {
     margin: 20px 30px;
     letter-spacing: 30px;
 }
+.musica-eventos {
+    font-size: 20px;
+    margin: 35px;
+}
 
 .video-banner {
     display: block;
@@ -96,7 +100,33 @@ input {
     flex-direction: row;
 }
 
+/* contacto */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+   
+}
+.ruta-bosque {
+    display: flex;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+
 /* sobre nosotros */
+
+.musica-uniendo {
+    margin-top: 50px;
+}
 
 .nosotros {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -124,12 +154,14 @@ input {
 
 .ruteros img {
     height: 200px;
+    border-radius: 30px;
 }
 
 .rutero {
     display: flex;
     flex-direction: column;
     align-items: center;
+  
 }
 
 .rutero p {
@@ -137,6 +169,13 @@ input {
     font-weight: bold;
     font-size: 30px;
     margin: 20px;
+}
+
+/* -------galeria------ */
+
+.video {
+    display: flex;
+    justify-content: center;
 }
 
 /* -------Footer------- */
@@ -167,6 +206,7 @@ input {
 .footer p {
     padding-top: 7px;
     padding-left: 20px;
+    font-size: 13px;
 }
 
 footer {
@@ -177,7 +217,7 @@ footer {
 }
 
 .logofooter {
-    width: 150px;
+    width: 200px;
     display: inline;
     flex-direction: row;
     border: none;
@@ -239,5 +279,39 @@ footer {
     .ruteros {
         display: block;
     }
+    .rutero img {
+        height: 150px;
+    }
+    .musica-uniendo {
+        font-size: 16px;
+      letter-spacing: 1px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .musica-eventos {
+        display: none;
+    }
+    .logofooter {
+        display: none;
+    }
+.img1 {
+    width: 250px;
+}
+.img2 {
+    width: 250px;
+}
+.img3 {
+    width: 250px;
+}
+.img4 {
+    width: 250px;
+}
+.img5 {
+    width: 250px;
+}
+.video {
+    width: 250px;
+}
 
 }
