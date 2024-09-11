@@ -1,0 +1,18 @@
+
+.caja-carrito {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.carrito {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+.numero-carrito {
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-top: 3px;
+}
