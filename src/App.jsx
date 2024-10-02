@@ -1,22 +1,34 @@
 
-import './App.css'
-import NavBar from './componentes/NavBar'
-import Banner from './componentes/Banner'
-import CartWidget from './componentes/CartWidget'
-import ItemListContainer from './componentes/ItemListContainer'
+import './App.css';
+import NavBar from './componentes/NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeView from './views/homeView/HomeView';
+import MonitoresView from './views/MonitoresView/MonitoresView'
+import PlacasView from './views/PlacasView/PlacasView'
+import MicrofonosView from './views/MicrofonosView/MicrofonosView'
 
 function App() {
+
+
   return (
 
-    <div className='main'>
-      <nav>
-        <NavBar />
-        <CartWidget />
-      </nav>
-      <ItemListContainer greeting="bienvenido!" />
+    
 
-      <Banner />
-    </div>
+      <BrowserRouter>
+        <nav>
+          <NavBar />
+        </nav>
+        <Routes>
+          <Route exact path='/' element={<HomeView />} />
+          <Route exact path='/monitores' element={<MonitoresView />} />
+          <Route exact path='/placas' element={<PlacasView />} />
+          <Route exact path='/microfonos' element={<MicrofonosView />} />
+        </Routes>
+      </BrowserRouter>
+
+
+
+    
 
   )
 }
