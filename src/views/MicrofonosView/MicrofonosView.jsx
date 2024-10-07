@@ -1,16 +1,23 @@
 import React from 'react'
 
-import CardComponent from '../../componentes/CardComponent'
+import ItemListContainer from '../../componentes/ItemListContainer'
 
 
-function HomeView() {
+
+function MicrofonosView() {
+
+
+    
+
+
     return (
         <>
-            <CardComponent />
 
-            
+            <ItemListContainer section={'microfonos'}/>
+
+
         </>
     )
 }
 
-export default HomeView
+export default MicrofonosView

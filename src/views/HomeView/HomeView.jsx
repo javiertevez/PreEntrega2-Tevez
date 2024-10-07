@@ -6,6 +6,8 @@ function HomeView() {
     return (
         <div className='main'>
             <Banner />
+
+            <ItemListContainer section={''}/>
             
         </div>
     )

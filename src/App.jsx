@@ -18,12 +18,18 @@ function App() {
         <nav>
           <NavBar />
         </nav>
+        
         <Routes>
           <Route exact path='/' element={<HomeView />} />
-          <Route exact path='/monitores' element={<MonitoresView />} />
-          <Route exact path='/placas' element={<PlacasView />} />
-          <Route exact path='/microfonos' element={<MicrofonosView />} />
+          <Route exact path='/monitores/:productName' element={<MonitoresView />} />
+          <Route exact path='/monitores/' element={<MonitoresView />} />
+          <Route exact path='/placas/:productName' element={<PlacasView />} />
+          <Route exact path='/placas/' element={<PlacasView />} />
+          <Route exact path='/microfonos/:productName' element={<MicrofonosView />} />
+          <Route exact path='/microfonos/' element={<MicrofonosView />} />
         </Routes>
+          
+       
       </BrowserRouter>
 
 
@@ -34,3 +40,4 @@ function App() {
 }
 
 export default App
+

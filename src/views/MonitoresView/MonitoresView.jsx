@@ -5,7 +5,7 @@ import ItemListContainer from '../../componentes/ItemListContainer'
 function HomeView() {
     return (
         <>
-            <ItemListContainer />
+            <ItemListContainer section={'monitores'}/>
 
            
             

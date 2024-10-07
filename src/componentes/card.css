@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'audiofilia';
+    src: url(./assets/audiofilia.ttf);
+  }
+  
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border: solid rgb(240, 188, 17) 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px;
+    transition: all 300ms;
+    &:hover {
+        transform: translateY(-7px);
+        
+        
+    }
+}
+
+
+.image {
+   
+    width: 170px;
+    height: 190px;
+    object-fit: contain;
+
+}
+
+.text {
+    margin-top: 10px;
+    font-family: sans-serif;
+
+
+}
+.productos {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'audiofilia';
+    color: rgb(240, 188, 17);
+    text-shadow: 10px 6px 10px black;
+}
+

@@ -4,30 +4,33 @@
 import '../App.css'
 import React from 'react'
 import { useEffect, useState } from 'react'
+import CardComponent from './CardComponent'
+import { getFilteredProducts, getProducts } from '../../asyncmock'
+import { useParams } from 'react-router-dom'
 
-function ItemListContainer() {
+function ItemListContainer({section}) {
 
- const [products, setProducts] = useState([]);
+const [products, setProducts] = useState([]);
 
-useEffect(()=>{
-  fetch('https://fakestoreapi.com/products/')
-  .then(response => response.json())
-  .then(data => setProducts(data))
-  .catch(error => console.log(error))
-  .finally(()=>console.log('Petición finalizada'))
-},[])
+const {productName} = useParams();
 
-
+useEffect (() => {
+  getProducts().then(response=> setProducts(section=='' ? response : response.filter(product=>product.section==section)))
+}, [productName]);
 
 
   return (
-    <section>
-{products.map(product=><p key={product.id}>{product.title}</p>)}
+    <section className='cardSection'>
+      <h2 className='productos'>Productos</h2>
+      <section className='cardSection2'>
+      {products.map(product =><CardComponent key={product.id} product={product}/>)}
 
 
 
     </section>
-    
+
+    </section>
+
   )
 }
 
