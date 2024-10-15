@@ -1,33 +1,43 @@
 
-
-
 import '../App.css'
 import React from 'react'
-import { useEffect, useState } from 'react'
+import { useContext } from 'react'
 import CardComponent from './CardComponent'
-import { getFilteredProducts, getProducts } from '../../asyncmock'
-import { useParams } from 'react-router-dom'
 
-function ItemListContainer({section}) {
 
-const [products, setProducts] = useState([]);
+import { ProductContext } from '../context/ProductContext.jsx'
 
-const {productName} = useParams();
+function ItemListContainer({ section }) {
 
-useEffect (() => {
-  getProducts().then(response=> setProducts(section=='' ? response : response.filter(product=>product.section==section)))
-}, [productName]);
+  const products = useContext(ProductContext);
+
+
+  const filterBySection = prod => prod.section === section;
+
+
+
+  const sectionIsEmpty = (section === '');
+
 
 
   return (
     <section className='cardSection'>
       <h2 className='productos'>Productos</h2>
       <section className='cardSection2'>
-      {products.map(product =><CardComponent key={product.id} product={product}/>)}
+        {
+
+          (sectionIsEmpty ?
+            products :
+            products.filter(filterBySection)).map(
+              product => <CardComponent key={product.id} product={product} link={product.name} />
+            )
+
+
+        }
 
 
 
-    </section>
+      </section>
 
     </section>
 

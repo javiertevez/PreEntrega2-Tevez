@@ -1,0 +1,32 @@
+
+.product-detail-box {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 4px 10px rgb(0, 0, 0);
+    
+}
+
+.img-detail {
+    width: 400px;
+}
+p {
+    text-align: justify;
+    margin: 10px;
+    margin-top: 30px;
+}
+.title {
+    font-family: sans-serif;
+}
+p {
+    font-family: sans-serif;
+}
+.detail-section {
+    background-color: rgb(39, 39, 39);
+    height: 800px;
+    padding-top: 40px;
+}

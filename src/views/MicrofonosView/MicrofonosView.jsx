@@ -11,12 +11,12 @@ function MicrofonosView() {
 
 
     return (
-        <>
+        <div className='main'>
 
             <ItemListContainer section={'microfonos'}/>
 
 
-        </>
+        </div>
     )
 }
 

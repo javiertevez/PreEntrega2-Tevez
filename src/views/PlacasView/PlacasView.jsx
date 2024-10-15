@@ -4,12 +4,12 @@ import ItemListContainer from '../../componentes/ItemListContainer'
 
 function HomeView() {
     return (
-        <>
+        <div className='main'>
              <ItemListContainer section={'placas'}/>
 
            
             
-        </>
+        </div>
     )
 }
 

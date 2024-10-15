@@ -1,4 +1,4 @@
-import '../cart.css'
+import '../styles/cart.css'
 import React from 'react'
 
 function CartWidget() {
